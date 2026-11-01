@@ -89,6 +89,12 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .event-art__media { position: absolute; inset: 16px; display: block; width: calc(100% - 32px); height: calc(100% - 32px); object-fit: cover; object-position: center; }
 .event-art__sound { position: absolute; z-index: 2; top: 28px; inset-inline-end: 28px; border: 1px solid rgba(216,180,124,.75); background: rgba(20,21,18,.86); color: #f4eee4; padding: 9px 13px; font: inherit; font-size: 12px; cursor: pointer; }
 
+.moments-section { padding: 86px 0 96px; background: #24231f; }
+.moments-board { position: relative; min-height: 560px; margin: 42px 0 0; padding: 0; overflow: hidden; list-style: none; border: 12px solid #523d29; border-radius: 5px; background-color: #82603c; background-image: radial-gradient(ellipse at 20% 25%, rgba(232,193,132,.18), transparent 52%), radial-gradient(ellipse at 82% 78%, rgba(38,24,12,.28), transparent 58%), repeating-linear-gradient(8deg, rgba(255,231,190,.035) 0 2px, transparent 2px 5px), repeating-linear-gradient(102deg, rgba(42,25,12,.04) 0 1px, transparent 1px 6px); box-shadow: inset 0 0 0 2px rgba(231,198,151,.35), 0 18px 42px rgba(0,0,0,.28); }
+.moments-photo { position: absolute; top: var(--photo-y); left: var(--photo-x); width: clamp(205px, 22vw, 270px); aspect-ratio: 3 / 4; padding: 6px; transform: translate(-50%, -5%) rotate(var(--photo-rotation)); background: #e8dece; box-shadow: 0 16px 28px rgba(0,0,0,.38); }
+.moments-photo::before { content: ''; position: absolute; z-index: 1; top: -9px; left: 50%; width: 15px; height: 15px; transform: translateX(-50%); border-radius: 50%; background: radial-gradient(circle at 35% 30%, #f5dfb5 0 12%, #bd9055 42%, #72512f 78%); box-shadow: 0 3px 6px rgba(0,0,0,.45); }
+.moments-photo img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+
 .contact-section { padding: 105px 0 115px; background: #26251f; }
 .contact-layout { display: grid; grid-template-columns: .82fr 1.18fr; gap: 100px; }
 .contact-list { border-top: 1px solid var(--line); }
@@ -139,6 +145,8 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   .games-section, .hours-section, .events-section, .contact-section { padding-block: 80px; }
   .games-section { padding-block: 70px; }
   .hours-section { padding-block: 54px; }
+  .moments-section { padding-block: 68px; }
+  .moments-board { min-height: 520px; }
   .hours-layout, .contact-layout, .event-layout { grid-template-columns: 1fr; gap: 42px; }
   .event-art { max-width: 620px; width: 100%; }
   .footer-main { gap: 36px; }
@@ -163,6 +171,9 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   .games-section, .hours-section, .events-section, .contact-section { padding-block: 70px; }
   .games-section { padding-block: 60px; }
   .hours-section { padding-block: 45px; }
+  .moments-section { padding-block: 58px; }
+  .moments-board { min-height: 450px; margin-top: 30px; border-width: 9px; }
+  .moments-photo { left: clamp(36%, var(--photo-x), 64%); top: clamp(16%, var(--photo-y), 36%); width: min(68vw, 225px); }
   .section-heading { gap: 15px; }
   .section-heading h2 { font-size: 35px; }
   .games-marquee { margin-top: 28px; }

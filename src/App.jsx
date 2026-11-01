@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { contactLinks, copy, games, heroImage, hours } from './content'
+import { contactLinks, copy, games, heroImage, hours, moments } from './content'
 import logo from './assets/logo.svg'
 import thursdayPoster from './assets/photos/thursday-poster.jpg'
 import thursdayVideo from './assets/video/thursday-nights.mp4'
@@ -125,7 +125,9 @@ function Home({ language, t }) {
 
     <section className="section events-section" id="events" aria-labelledby="events-title"><div className="shell event-layout"><div className="event-copy"><SectionHeading number="03" kicker={t.eventsKicker} title={t.eventsTitle} id="events-title" /><p className="event-description">{t.eventsText}</p><div className="event-tags">{t.eventsTags.map((tag) => <span key={tag}>{tag}</span>)}</div></div><EventVideo t={t} /></div></section>
 
-    <section className="section contact-section" id="contact" aria-labelledby="contact-title"><div className="shell contact-layout"><SectionHeading number="04" kicker={t.contactKicker} title={t.contactTitle} id="contact-title" /><div className="contact-list">{t.contactItems.map((item, index) => <div className="contact-item" key={item.key}><span className="contact-item__number">0{index + 1}</span><span className="contact-item__label">{item.label}</span><span className="contact-item__value"><ContactActions kind={item.key} t={t} /></span></div>)}</div></div></section>
+    <section className="section moments-section" id="moments" aria-labelledby="moments-title"><div className="shell"><SectionHeading number="04" kicker={t.momentsKicker} title={t.momentsTitle} id="moments-title" /><ul className="moments-board" aria-label={t.momentsTitle}>{moments.map((moment) => <li className="moments-photo" key={moment.key} style={{ '--photo-x': moment.x, '--photo-y': moment.y, '--photo-rotation': moment.rotation }}><img src={moment.image} alt={moment.alt[language]} loading="lazy" decoding="async" /></li>)}</ul></div></section>
+
+    <section className="section contact-section" id="contact" aria-labelledby="contact-title"><div className="shell contact-layout"><SectionHeading number="05" kicker={t.contactKicker} title={t.contactTitle} id="contact-title" /><div className="contact-list">{t.contactItems.map((item, index) => <div className="contact-item" key={item.key}><span className="contact-item__number">0{index + 1}</span><span className="contact-item__label">{item.label}</span><span className="contact-item__value"><ContactActions kind={item.key} t={t} /></span></div>)}</div></div></section>
   </main>
 }
 

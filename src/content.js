@@ -6,6 +6,7 @@ import billiardsPhoto from './assets/photos/billiards.jpg'
 import airHockeyPhoto from './assets/photos/air-hockey.jpg'
 import fifaPhoto from './assets/photos/fifa.jpg'
 import playstationPhoto from './assets/photos/playstation.jpg'
+import abuGhassahPhoto from './assets/photos/moment-abu-ghassah.jpeg'
 import tetoArt from './assets/teto-art.svg'
 
 export const heroImage = heroLoungePhoto
@@ -26,6 +27,10 @@ export const games = [
   { key: 'teto', image: tetoArt, name: { ar: 'تيتو', en: 'Teto' }, alt: { ar: 'رسم تجريدي لطاولة ألعاب', en: 'Abstract tabletop game artwork' } },
 ]
 
+export const moments = [
+  { key: 'abu-ghassah-baloot', image: abuGhassahPhoto, alt: { ar: 'جلسة بلوت مع المغني أبو غسة', en: 'A Baloot gathering with singer Abu Ghassah' }, x: '25%', y: '18%', rotation: '-4deg' },
+]
+
 export const hours = [
   { day: 'sunday' }, { day: 'monday' }, { day: 'tuesday' }, { day: 'wednesday' }, { day: 'thursday', allDay: true }, { day: 'friday', closed: true }, { day: 'saturday', closed: true },
 ]
@@ -40,6 +45,7 @@ export const copy = {
     hoursKicker: 'متى نلتقي؟', hoursTitle: 'أوقات الفلة', hoursIntro: 'الجدول الأسبوعي الحالي', standardHours: '٩:٠٠ م – ٢:٠٠ ص', allDay: 'مفتوح 24 ساعة', closed: 'مغلق',
     days: { sunday: 'الأحد', monday: 'الإثنين', tuesday: 'الثلاثاء', wednesday: 'الأربعاء', thursday: 'الخميس', friday: 'الجمعة', saturday: 'السبت' },
     eventsKicker: 'كل خميس', eventsTitle: 'ليالي الخميس', eventsText: 'أجواء طرب مع الطبلة والعود والغناء مع المغني أبو غسة.', eventsTags: ['طبلة', 'غناء', 'عود'], eventVideoLabel: 'فيديو من ليالي الخميس مع صوت العود والغناء', eventSoundAction: 'اضغط لتشغيل الصوت',
+    momentsKicker: 'لقطات عفوية', momentsTitle: 'ذكريات الفلة',
     contactKicker: 'نلقاك قريب', contactTitle: 'تواصل معنا', contactItems: [{ key: 'location', label: 'الموقع والخريطة' }, { key: 'phone', label: 'الهاتف وواتساب' }], mapAction: 'افتح الخريطة', whatsappAction: 'واتساب',
     backHome: 'العودة للرئيسية', legalLabel: 'معلومات الموقع', footerTagline: 'مش هتقدر تغمض عينيك', footerExplore: 'اكتشف', footerInformation: 'معلومات', rights: 'جميع الحقوق محفوظة.', footerClosing: 'نلتقي قريبًا.',
     legal: {
@@ -66,6 +72,7 @@ export const copy = {
     hoursKicker: 'When to visit', hoursTitle: 'Opening Hours', hoursIntro: 'Our current weekly schedule', standardHours: '9:00 PM – 2:00 AM', allDay: 'Open 24 hours', closed: 'Closed',
     days: { sunday: 'Sunday', monday: 'Monday', tuesday: 'Tuesday', wednesday: 'Wednesday', thursday: 'Thursday', friday: 'Friday', saturday: 'Saturday' },
     eventsKicker: 'Every Thursday', eventsTitle: 'Thursday Nights', eventsText: 'Traditional entertainment with tabla, oud, and singing with singer Abu Ghassah.', eventsTags: ['Tabla', 'Singing', 'Oud'], eventVideoLabel: 'Thursday Nights video with live oud and singing', eventSoundAction: 'Tap for sound',
+    momentsKicker: 'Unposed moments', momentsTitle: 'Moments at Thigah Cave',
     contactKicker: 'See you soon', contactTitle: 'Contact', contactItems: [{ key: 'location', label: 'Location & map' }, { key: 'phone', label: 'Phone & WhatsApp' }], mapAction: 'Open map', whatsappAction: 'WhatsApp',
     backHome: 'Back to home', legalLabel: 'Website information', footerTagline: "You won't be able to close your eyes", footerExplore: 'Explore', footerInformation: 'Information', rights: 'All rights reserved.', footerClosing: 'See you soon.',
     legal: {
