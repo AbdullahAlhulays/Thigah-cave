@@ -1,7 +1,8 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { contactLinks, copy, games, heroImage, hours } from './content'
 import logo from './assets/logo.svg'
-import thursdayStill from './assets/photos/thursday-nights.png'
+import thursdayPoster from './assets/photos/thursday-poster.jpg'
+import thursdayVideo from './assets/video/thursday-nights.mp4'
 import './App.css'
 
 const sections = ['home', 'games', 'hours', 'events', 'contact']
@@ -51,6 +52,55 @@ function ContactActions({ kind, t }) {
   return null
 }
 
+function EventVideo({ t }) {
+  const videoRef = useRef(null)
+  const [needsSoundTap, setNeedsSoundTap] = useState(false)
+
+  useEffect(() => {
+    const video = videoRef.current
+    if (!video) return undefined
+
+    let inView = false
+    const observer = new IntersectionObserver(([entry]) => {
+      const visible = entry.isIntersecting && entry.intersectionRatio >= 0.55
+      if (visible === inView) return
+      inView = visible
+
+      if (!visible) {
+        video.pause()
+        return
+      }
+
+      video.muted = false
+      video.play().then(() => {
+        if (inView) setNeedsSoundTap(false)
+      }).catch(async (error) => {
+        if (!inView) return
+        if (error.name === 'NotAllowedError') {
+          video.muted = true
+          try { await video.play() } catch { /* A tap can start playback if autoplay is fully blocked. */ }
+        }
+        setNeedsSoundTap(true)
+      })
+    }, { threshold: [0, 0.55, 1] })
+
+    observer.observe(video)
+    return () => { inView = false; observer.disconnect(); video.pause() }
+  }, [])
+
+  function enableSound() {
+    const video = videoRef.current
+    if (!video) return
+    video.muted = false
+    video.play().then(() => setNeedsSoundTap(false)).catch(() => setNeedsSoundTap(true))
+  }
+
+  return <div className="event-art">
+    <video ref={videoRef} className="event-art__media" src={thursdayVideo} poster={thursdayPoster} aria-label={t.eventVideoLabel} playsInline preload="metadata" controls loop onVolumeChange={(event) => setNeedsSoundTap(event.currentTarget.muted)} />
+    {needsSoundTap && <button className="event-art__sound" type="button" onClick={enableSound}>{t.eventSoundAction}</button>}
+  </div>
+}
+
 function Home({ language, t }) {
   return <main id="main-content" tabIndex={-1}>
     <section className="hero" id="home" aria-labelledby="hero-title">
@@ -69,7 +119,7 @@ function Home({ language, t }) {
       <div className="hours-table" role="table" aria-label={t.hoursTitle}>{hours.map((item) => <div className={`hours-row ${item.allDay ? 'hours-row--highlight' : ''} ${item.closed ? 'hours-row--muted' : ''}`} role="row" key={item.day}><span role="cell">{t.days[item.day]}</span><strong role="cell">{item.allDay ? t.allDay : item.closed ? t.closed : t.standardHours}</strong></div>)}</div>
     </div></section>
 
-    <section className="section events-section" id="events" aria-labelledby="events-title"><div className="shell event-layout"><div className="event-copy"><SectionHeading number="03" kicker={t.eventsKicker} title={t.eventsTitle} id="events-title" /><p className="event-description">{t.eventsText}</p><div className="event-tags">{t.eventsTags.map((tag) => <span key={tag}>{tag}</span>)}</div><p className="event-duration">{t.eventsDuration}</p></div><div className="event-art"><img className="event-art__media" src={thursdayStill} alt={t.eventStillAlt} loading="lazy" decoding="async" /></div></div></section>
+    <section className="section events-section" id="events" aria-labelledby="events-title"><div className="shell event-layout"><div className="event-copy"><SectionHeading number="03" kicker={t.eventsKicker} title={t.eventsTitle} id="events-title" /><p className="event-description">{t.eventsText}</p><div className="event-tags">{t.eventsTags.map((tag) => <span key={tag}>{tag}</span>)}</div><p className="event-duration">{t.eventsDuration}</p></div><EventVideo t={t} /></div></section>
 
     <section className="section contact-section" id="contact" aria-labelledby="contact-title"><div className="shell contact-layout"><SectionHeading number="04" kicker={t.contactKicker} title={t.contactTitle} text={t.contactIntro} id="contact-title" /><div className="contact-list">{t.contactItems.map((item, index) => <div className="contact-item" key={item.key}><span className="contact-item__number">0{index + 1}</span><span className="contact-item__label">{item.label}</span><span className="contact-item__value"><ContactActions kind={item.key} t={t} /></span></div>)}</div></div></section>
   </main>

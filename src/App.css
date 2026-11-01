@@ -88,14 +88,15 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .hours-row--muted { color: #a8a49a; font-size: 13px; }
 
 .events-section { padding: 108px 0; background: #1a1b19; }
-.event-layout { display: grid; grid-template-columns: 1fr .8fr; gap: 100px; align-items: center; }
+.event-layout { display: grid; grid-template-columns: .95fr 1.05fr; gap: 80px; align-items: center; }
 .event-description { max-width: 510px; color: #d0cac0; font-size: 17px; line-height: 1.85; margin: 26px 0; }
 .event-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 25px; }
 .event-tags span { border: 1px solid #6c5c43; padding: 7px 16px; color: var(--accent); font-size: 12px; }
 .event-duration { margin: 27px 0 0; color: var(--muted); font-size: 12px; }
-.event-art { height: 335px; position: relative; overflow: hidden; background: #322e27; border: 1px solid #5d5140; }
+.event-art { aspect-ratio: 5 / 3; position: relative; overflow: hidden; background: #322e27; border: 1px solid #5d5140; }
 .event-art::before { content: ''; position: absolute; z-index: 1; inset: 15px; border: 1px solid rgba(216,180,124,.3); pointer-events: none; }
 .event-art__media { position: absolute; inset: 16px; display: block; width: calc(100% - 32px); height: calc(100% - 32px); object-fit: cover; object-position: center; }
+.event-art__sound { position: absolute; z-index: 2; top: 28px; inset-inline-end: 28px; border: 1px solid rgba(216,180,124,.75); background: rgba(20,21,18,.86); color: #f4eee4; padding: 9px 13px; font: inherit; font-size: 12px; cursor: pointer; }
 
 .contact-section { padding: 105px 0 115px; background: #26251f; }
 .contact-layout { display: grid; grid-template-columns: .82fr 1.18fr; gap: 100px; }
@@ -148,7 +149,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   .games-section, .hours-section, .events-section, .contact-section { padding-block: 80px; }
   .game-card { height: 245px; }
   .hours-layout, .contact-layout, .event-layout { grid-template-columns: 1fr; gap: 42px; }
-  .event-art { max-width: 540px; width: 100%; }
+  .event-art { max-width: 620px; width: 100%; }
   .footer-main { gap: 36px; }
 }
 @media (max-width: 620px) {
@@ -185,7 +186,6 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   .hours-row { min-height: 59px; padding-inline: 10px; font-size: 13px; }
   .hours-row--muted { font-size: 12px; }
   .event-description { font-size: 15px; margin-top: 20px; }
-  .event-art { height: 280px; }
   .contact-item { grid-template-columns: 25px 1fr 1fr; gap: 8px; }
   .contact-item__label, .contact-item__value { font-size: 12px; }
   .footer-main { grid-template-columns: 1fr 1fr; gap: 38px 22px; padding-block: 55px; }

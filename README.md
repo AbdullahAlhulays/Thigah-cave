@@ -24,7 +24,9 @@ On Windows PowerShell installations that block `npm.ps1`, use `npm.cmd` instead.
 
 The following photos are bundled locally in `src/assets/photos/`. Their source pages indicate they are free to use under the [Unsplash License](https://unsplash.com/license). The Teto graphic and brand mark are original SVGs in the project.
 
-The Thursday Nights frame currently uses a generated illustrative still at `src/assets/photos/thursday-nights.png`. Replace that media with the venue video when it is supplied.
+The Thursday Nights frame plays `src/assets/video/thursday-nights.mp4`, a processed version of the supplied WhatsApp clip. The person and oud remain clear while the surrounding moving footage is blurred and extended to a wide frame. The original AAC audio is preserved. A frame from the video at `src/assets/photos/thursday-poster.jpg` serves as the loading poster. The raw WhatsApp file remains local and is excluded from Git.
+
+The video begins when it enters view and pauses when it leaves. It first attempts playback with sound; browsers that block audible autoplay play it muted and show a **Tap for sound** button.
 
 | Use | Photographer | Source |
 | --- | --- | --- |
