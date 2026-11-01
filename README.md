@@ -24,6 +24,8 @@ On Windows PowerShell installations that block `npm.ps1`, use `npm.cmd` instead.
 
 The following photos are bundled locally in `src/assets/photos/`. Their source pages indicate they are free to use under the [Unsplash License](https://unsplash.com/license). The Teto graphic and brand mark are original SVGs in the project.
 
+The Thursday Nights frame currently uses a generated illustrative still at `src/assets/photos/thursday-nights.png`. Replace that media with the venue video when it is supplied.
+
 | Use | Photographer | Source |
 | --- | --- | --- |
 | Café hero | Monaz Nazary | [Unsplash](https://unsplash.com/photos/cozy-cafe-interior-with-leather-chairs-and-round-tables-ngkGVEqRKW8) |
