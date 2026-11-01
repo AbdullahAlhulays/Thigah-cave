@@ -106,8 +106,7 @@ function Home({ language, t }) {
     <section className="hero" id="home" aria-labelledby="hero-title">
       <img className="hero__image" src={heroImage} alt={t.heroAlt} fetchPriority="high" />
       <div className="hero__overlay" />
-      <div className="shell hero__inner"><div className="hero__content"><p className="eyebrow hero__eyebrow"><span className="eyebrow-line" />{t.heroEyebrow}</p><h1 id="hero-title">{t.heroTitle}</h1><p className="hero__subtitle">{t.heroSubtitle}</p><a className="primary-link" href="#games">{t.exploreGames}<span aria-hidden="true" className="link-arrow">←</span></a></div><span className="hero__side-note">{t.heroSideNote}</span></div>
-      <div className="hero__bottom"><span>{t.heroBottom}</span><span>01 / 04</span></div>
+      <div className="shell hero__inner"><div className="hero__content"><h1 id="hero-title">{t.heroTitle}</h1><p className="hero__subtitle">{t.heroSubtitle}</p><a className="primary-link" href="#games">{t.exploreGames}<span aria-hidden="true" className="link-arrow">←</span></a></div></div>
     </section>
 
     <section className="section games-section" id="games" aria-labelledby="games-title">
