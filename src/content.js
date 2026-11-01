@@ -39,7 +39,7 @@ export const copy = {
     gamesKicker: 'على راحتك', gamesTitle: 'اللعبة اللي تجمعنا', gamesIntro: 'من البلوت إلى ألعاب الطاولة والبلايستيشن، اختر جوّك.', featured: 'اللعبة المفضلة',
     hoursKicker: 'متى نلتقي؟', hoursTitle: 'أوقات الفلة', hoursIntro: 'الجدول الأسبوعي الحالي', standardHours: '٩:٠٠ م – ٢:٠٠ ص', allDay: 'مفتوح 24 ساعة', closed: 'مغلق',
     days: { sunday: 'الأحد', monday: 'الإثنين', tuesday: 'الثلاثاء', wednesday: 'الأربعاء', thursday: 'الخميس', friday: 'الجمعة', saturday: 'السبت' },
-    eventsKicker: 'كل خميس', eventsTitle: 'ليالي الخميس', eventsText: 'أجواء طرب مع الطبلة والعود والغناء مع المغني أبو غسة، لمدة ساعة إلى ساعتين تقريبًا.', eventsTags: ['طبلة', 'غناء', 'عود'], eventVideoLabel: 'فيديو من ليالي الخميس مع صوت العود والغناء', eventSoundAction: 'اضغط لتشغيل الصوت',
+    eventsKicker: 'كل خميس', eventsTitle: 'ليالي الخميس', eventsText: 'أجواء طرب مع الطبلة والعود والغناء مع المغني أبو غسة.', eventsTags: ['طبلة', 'غناء', 'عود'], eventVideoLabel: 'فيديو من ليالي الخميس مع صوت العود والغناء', eventSoundAction: 'اضغط لتشغيل الصوت',
     contactKicker: 'نلقاك قريب', contactTitle: 'تواصل معنا', contactItems: [{ key: 'location', label: 'الموقع والخريطة' }, { key: 'phone', label: 'الهاتف وواتساب' }], mapAction: 'افتح الخريطة', whatsappAction: 'واتساب',
     backHome: 'العودة للرئيسية', legalLabel: 'معلومات الموقع', footerTagline: 'مكانك للعب والوناسة.', footerExplore: 'اكتشف', footerInformation: 'معلومات', rights: 'جميع الحقوق محفوظة.', footerClosing: 'نلتقي قريبًا.',
     legal: {
@@ -65,7 +65,7 @@ export const copy = {
     gamesKicker: 'Make yourself at home', gamesTitle: 'Games worth gathering for', gamesIntro: 'From Baloot to table games and PlayStation, find your game.', featured: 'The main event',
     hoursKicker: 'When to visit', hoursTitle: 'Opening Hours', hoursIntro: 'Our current weekly schedule', standardHours: '9:00 PM – 2:00 AM', allDay: 'Open 24 hours', closed: 'Closed',
     days: { sunday: 'Sunday', monday: 'Monday', tuesday: 'Tuesday', wednesday: 'Wednesday', thursday: 'Thursday', friday: 'Friday', saturday: 'Saturday' },
-    eventsKicker: 'Every Thursday', eventsTitle: 'Thursday Nights', eventsText: 'Traditional entertainment with tabla, oud, and singing with singer Abu Ghassah for approximately 1–2 hours.', eventsTags: ['Tabla', 'Singing', 'Oud'], eventVideoLabel: 'Thursday Nights video with live oud and singing', eventSoundAction: 'Tap for sound',
+    eventsKicker: 'Every Thursday', eventsTitle: 'Thursday Nights', eventsText: 'Traditional entertainment with tabla, oud, and singing with singer Abu Ghassah.', eventsTags: ['Tabla', 'Singing', 'Oud'], eventVideoLabel: 'Thursday Nights video with live oud and singing', eventSoundAction: 'Tap for sound',
     contactKicker: 'See you soon', contactTitle: 'Contact', contactItems: [{ key: 'location', label: 'Location & map' }, { key: 'phone', label: 'Phone & WhatsApp' }], mapAction: 'Open map', whatsappAction: 'WhatsApp',
     backHome: 'Back to home', legalLabel: 'Website information', footerTagline: 'Your place to play and unwind.', footerExplore: 'Explore', footerInformation: 'Information', rights: 'All rights reserved.', footerClosing: 'See you soon.',
     legal: {
