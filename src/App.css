@@ -92,7 +92,6 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .event-description { max-width: 510px; color: #d0cac0; font-size: 17px; line-height: 1.85; margin: 26px 0; }
 .event-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 25px; }
 .event-tags span { border: 1px solid #6c5c43; padding: 7px 16px; color: var(--accent); font-size: 12px; }
-.event-duration { margin: 27px 0 0; color: var(--muted); font-size: 12px; }
 .event-art { aspect-ratio: 5 / 3; position: relative; overflow: hidden; background: #322e27; border: 1px solid #5d5140; }
 .event-art::before { content: ''; position: absolute; z-index: 1; inset: 15px; border: 1px solid rgba(216,180,124,.3); pointer-events: none; }
 .event-art__media { position: absolute; inset: 16px; display: block; width: calc(100% - 32px); height: calc(100% - 32px); object-fit: cover; object-position: center; }
