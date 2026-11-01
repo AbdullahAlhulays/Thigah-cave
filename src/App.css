@@ -95,7 +95,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .event-duration { margin: 27px 0 0; color: var(--muted); font-size: 12px; }
 .event-art { height: 335px; position: relative; overflow: hidden; background: #322e27; border: 1px solid #5d5140; }
 .event-art::before { content: ''; position: absolute; z-index: 1; inset: 15px; border: 1px solid rgba(216,180,124,.3); pointer-events: none; }
-.event-art__media { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.event-art__media { position: absolute; inset: 16px; display: block; width: calc(100% - 32px); height: calc(100% - 32px); object-fit: cover; object-position: center; }
 
 .contact-section { padding: 105px 0 115px; background: #26251f; }
 .contact-layout { display: grid; grid-template-columns: .82fr 1.18fr; gap: 100px; }
