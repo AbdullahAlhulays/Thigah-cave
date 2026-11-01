@@ -73,7 +73,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .game-card h3 { position: absolute; inset-inline: 20px; bottom: 20px; margin: 0; font-size: 21px; line-height: 1.3; font-weight: 700; }
 @keyframes games-scroll { to { transform: translate3d(-50%, 0, 0); } }
 
-.hours-section { padding: 110px 0; background: #24241f; border-block: 1px solid var(--line); }
+.hours-section { padding: 62px 0; background: #24241f; border-block: 1px solid var(--line); }
 .hours-layout { display: grid; grid-template-columns: .82fr 1.18fr; gap: 100px; }
 .hours-table { border-top: 1px solid var(--line); }
 .hours-row { display: grid; grid-template-columns: 1fr 1fr; align-items: center; min-height: 63px; padding: 5px 22px; border-bottom: 1px solid var(--line); color: #e3ddd3; font-size: 15px; }
@@ -143,6 +143,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   .hero__bottom { padding-inline: 30px; }
   .games-section, .hours-section, .events-section, .contact-section { padding-block: 80px; }
   .games-section { padding-block: 70px; }
+  .hours-section { padding-block: 54px; }
   .hours-layout, .contact-layout, .event-layout { grid-template-columns: 1fr; gap: 42px; }
   .event-art { max-width: 620px; width: 100%; }
   .footer-main { gap: 36px; }
@@ -169,6 +170,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   .hero__bottom { padding-inline: 18px; }
   .games-section, .hours-section, .events-section, .contact-section { padding-block: 70px; }
   .games-section { padding-block: 60px; }
+  .hours-section { padding-block: 45px; }
   .section-heading { gap: 15px; }
   .section-heading h2 { font-size: 35px; }
   .games-marquee { margin-top: 28px; }
