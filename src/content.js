@@ -36,7 +36,7 @@ export const copy = {
     metaDescription: 'كهف ثقة: مكانك للعب والوناسة. بلوت، ألعاب طاولة، بلياردو، بلايستيشن، وليالي الخميس.',
     heroAlt: 'جلسات ومقاعد داخل مقهى دافئ بجدران مقوسة', heroEyebrow: 'مساحة للّعب واللّمة', heroTitle: 'كهف ثقة', heroSubtitle: 'مكانك للعب والوناسة', exploreGames: 'استكشف الألعاب', heroSideNote: 'جلسات • ألعاب • وناسة', heroBottom: 'ابدأ من هنا',
     gamesKicker: 'على راحتك', gamesTitle: 'اللعبة اللي تجمعنا', gamesIntro: 'من البلوت إلى ألعاب الطاولة والبلايستيشن، اختر جوّك.', featured: 'اللعبة المفضلة',
-    hoursKicker: 'متى نلتقي؟', hoursTitle: 'أوقات العمل', hoursIntro: 'الجدول الأسبوعي الحالي', standardHours: '٩:٠٠ م – ٢:٠٠ ص', allDay: 'مفتوح 24 ساعة', closed: 'مغلق',
+    hoursKicker: 'متى نلتقي؟', hoursTitle: 'أوقات الفلة', hoursIntro: 'الجدول الأسبوعي الحالي', standardHours: '٩:٠٠ م – ٢:٠٠ ص', allDay: 'مفتوح 24 ساعة', closed: 'مغلق',
     days: { sunday: 'الأحد', monday: 'الإثنين', tuesday: 'الثلاثاء', wednesday: 'الأربعاء', thursday: 'الخميس', friday: 'الجمعة', saturday: 'السبت' },
     eventsKicker: 'كل خميس', eventsTitle: 'ليالي الخميس', eventsText: 'أجواء طرب مع الطبلة والغناء والعود، لمدة ساعة إلى ساعتين تقريبًا.', eventsTags: ['طبلة', 'غناء', 'عود'], eventVideoLabel: 'فيديو من ليالي الخميس مع صوت العود والغناء', eventSoundAction: 'اضغط لتشغيل الصوت',
     contactKicker: 'نلقاك قريب', contactTitle: 'تواصل معنا', contactItems: [{ key: 'location', label: 'الموقع والخريطة' }, { key: 'phone', label: 'الهاتف وواتساب' }], mapAction: 'افتح الخريطة', whatsappAction: 'واتساب',
