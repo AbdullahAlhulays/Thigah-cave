@@ -45,7 +45,7 @@ export const copy = {
     hoursKicker: 'متى نلتقي؟', hoursTitle: 'أوقات الفلة', hoursIntro: 'الجدول الأسبوعي الحالي', standardHours: '٩:٠٠ م – ٢:٠٠ ص', allDay: 'مفتوح 24 ساعة', closed: 'مغلق',
     days: { sunday: 'الأحد', monday: 'الإثنين', tuesday: 'الثلاثاء', wednesday: 'الأربعاء', thursday: 'الخميس', friday: 'الجمعة', saturday: 'السبت' },
     eventsKicker: 'كل خميس', eventsTitle: 'ليالي الخميس', eventsText: 'أجواء طرب مع الطبلة والعود والغناء مع المغني أبو غسة.', eventsTags: ['طبلة', 'غناء', 'عود'], eventVideoLabel: 'فيديو من ليالي الخميس مع صوت العود والغناء', eventSoundAction: 'اضغط لتشغيل الصوت',
-    momentsKicker: 'ذكريات عفوية', momentsTitle: 'الكهف ليس مسؤولًا عن خسارة الهيبة',
+    momentsKicker: 'ذكريات عفوية', momentsTitle: 'الكهف غير مسؤول عن خسارة الهيبة',
     contactKicker: 'نلقاك قريب', contactTitle: 'تواصل معنا', contactItems: [{ key: 'location', label: 'الموقع والخريطة' }, { key: 'phone', label: 'الهاتف وواتساب' }], mapAction: 'افتح الخريطة', whatsappAction: 'واتساب',
     backHome: 'العودة للرئيسية', legalLabel: 'معلومات الموقع', footerTagline: 'مش هتقدر تغمض عينيك', footerExplore: 'اكتشف', footerInformation: 'معلومات', rights: 'جميع الحقوق محفوظة.', footerClosing: 'نلتقي قريبًا.',
     legal: {
