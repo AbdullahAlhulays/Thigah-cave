@@ -34,14 +34,14 @@ export const copy = {
   ar: {
     brandHome: 'كهف ثقة — الرئيسية', mainNav: 'القائمة الرئيسية', languageLabel: 'اختر اللغة', openMenu: 'افتح القائمة', closeMenu: 'أغلق القائمة', skipLink: 'الانتقال إلى المحتوى',
     nav: { home: 'الرئيسية', games: 'الألعاب', hours: 'أوقات العمل', events: 'الفعاليات', contact: 'تواصل معنا' },
-    metaDescription: 'كهف ثقة: مكانك للعب والوناسة. بلوت، ألعاب طاولة، بلياردو، بلايستيشن، وليالي الخميس.',
-    heroAlt: 'جلسات ومقاعد داخل مقهى دافئ بجدران مقوسة', heroEyebrow: 'مساحة للّعب واللّمة', heroTitle: 'كهف ثقة', heroSubtitle: 'مكانك للعب والوناسة', exploreGames: 'استكشف الألعاب', heroSideNote: 'جلسات • ألعاب • وناسة', heroBottom: 'ابدأ من هنا',
+    metaDescription: 'كهف ثقة: مش هتقدر تغمض عينيك. بلوت، ألعاب طاولة، بلياردو، بلايستيشن، وليالي الخميس.',
+    heroAlt: 'جلسات ومقاعد داخل مقهى دافئ بجدران مقوسة', heroEyebrow: 'مساحة للّعب واللّمة', heroTitle: 'كهف ثقة', heroSubtitle: 'مش هتقدر تغمض عينيك', exploreGames: 'استكشف الألعاب', heroSideNote: 'جلسات • ألعاب • وناسة', heroBottom: 'ابدأ من هنا',
     gamesKicker: 'على راحتك', gamesTitle: 'اللعبة اللي تجمعنا', gamesIntro: 'من البلوت إلى ألعاب الطاولة والبلايستيشن، اختر جوّك.', featured: 'اللعبة المفضلة',
     hoursKicker: 'متى نلتقي؟', hoursTitle: 'أوقات الفلة', hoursIntro: 'الجدول الأسبوعي الحالي', standardHours: '٩:٠٠ م – ٢:٠٠ ص', allDay: 'مفتوح 24 ساعة', closed: 'مغلق',
     days: { sunday: 'الأحد', monday: 'الإثنين', tuesday: 'الثلاثاء', wednesday: 'الأربعاء', thursday: 'الخميس', friday: 'الجمعة', saturday: 'السبت' },
     eventsKicker: 'كل خميس', eventsTitle: 'ليالي الخميس', eventsText: 'أجواء طرب مع الطبلة والعود والغناء مع المغني أبو غسة.', eventsTags: ['طبلة', 'غناء', 'عود'], eventVideoLabel: 'فيديو من ليالي الخميس مع صوت العود والغناء', eventSoundAction: 'اضغط لتشغيل الصوت',
     contactKicker: 'نلقاك قريب', contactTitle: 'تواصل معنا', contactItems: [{ key: 'location', label: 'الموقع والخريطة' }, { key: 'phone', label: 'الهاتف وواتساب' }], mapAction: 'افتح الخريطة', whatsappAction: 'واتساب',
-    backHome: 'العودة للرئيسية', legalLabel: 'معلومات الموقع', footerTagline: 'مكانك للعب والوناسة.', footerExplore: 'اكتشف', footerInformation: 'معلومات', rights: 'جميع الحقوق محفوظة.', footerClosing: 'نلتقي قريبًا.',
+    backHome: 'العودة للرئيسية', legalLabel: 'معلومات الموقع', footerTagline: 'مش هتقدر تغمض عينيك', footerExplore: 'اكتشف', footerInformation: 'معلومات', rights: 'جميع الحقوق محفوظة.', footerClosing: 'نلتقي قريبًا.',
     legal: {
       privacy: { title: 'سياسة الخصوصية', intro: 'نوضح هنا المعلومات التي تخص استخدام هذا الموقع.', sections: [
         { title: 'تفضيل اللغة', body: 'يحفظ الموقع اختيارك للعربية أو الإنجليزية في مساحة التخزين المحلية في متصفحك، حتى تظهر اللغة نفسها في زياراتك التالية. يمكنك حذف هذا التفضيل من إعدادات المتصفح.' },
@@ -60,14 +60,14 @@ export const copy = {
   en: {
     brandHome: 'Thigah Cave — Home', mainNav: 'Main navigation', languageLabel: 'Choose language', openMenu: 'Open menu', closeMenu: 'Close menu', skipLink: 'Skip to content',
     nav: { home: 'Home', games: 'Games', hours: 'Opening Hours', events: 'Events', contact: 'Contact' },
-    metaDescription: 'Thigah Cave: your place to play and unwind. Baloot, table games, billiards, PlayStation, and Thursday nights.',
-    heroAlt: 'Warm café seating with arched interior walls', heroEyebrow: 'A place to play and gather', heroTitle: 'Thigah Cave', heroSubtitle: 'Your place to play and unwind.', exploreGames: 'Explore the games', heroSideNote: 'GATHER • PLAY • UNWIND', heroBottom: 'Start exploring',
+    metaDescription: "Thigah Cave: You won't be able to close your eyes. Baloot, table games, billiards, PlayStation, and Thursday nights.",
+    heroAlt: 'Warm café seating with arched interior walls', heroEyebrow: 'A place to play and gather', heroTitle: 'Thigah Cave', heroSubtitle: "You won't be able to close your eyes", exploreGames: 'Explore the games', heroSideNote: 'GATHER • PLAY • UNWIND', heroBottom: 'Start exploring',
     gamesKicker: 'Make yourself at home', gamesTitle: 'Games worth gathering for', gamesIntro: 'From Baloot to table games and PlayStation, find your game.', featured: 'The main event',
     hoursKicker: 'When to visit', hoursTitle: 'Opening Hours', hoursIntro: 'Our current weekly schedule', standardHours: '9:00 PM – 2:00 AM', allDay: 'Open 24 hours', closed: 'Closed',
     days: { sunday: 'Sunday', monday: 'Monday', tuesday: 'Tuesday', wednesday: 'Wednesday', thursday: 'Thursday', friday: 'Friday', saturday: 'Saturday' },
     eventsKicker: 'Every Thursday', eventsTitle: 'Thursday Nights', eventsText: 'Traditional entertainment with tabla, oud, and singing with singer Abu Ghassah.', eventsTags: ['Tabla', 'Singing', 'Oud'], eventVideoLabel: 'Thursday Nights video with live oud and singing', eventSoundAction: 'Tap for sound',
     contactKicker: 'See you soon', contactTitle: 'Contact', contactItems: [{ key: 'location', label: 'Location & map' }, { key: 'phone', label: 'Phone & WhatsApp' }], mapAction: 'Open map', whatsappAction: 'WhatsApp',
-    backHome: 'Back to home', legalLabel: 'Website information', footerTagline: 'Your place to play and unwind.', footerExplore: 'Explore', footerInformation: 'Information', rights: 'All rights reserved.', footerClosing: 'See you soon.',
+    backHome: 'Back to home', legalLabel: 'Website information', footerTagline: "You won't be able to close your eyes", footerExplore: 'Explore', footerInformation: 'Information', rights: 'All rights reserved.', footerClosing: 'See you soon.',
     legal: {
       privacy: { title: 'Privacy Policy', intro: 'This page explains information relevant to using this website.', sections: [
         { title: 'Language preference', body: 'The website saves your Arabic or English choice in your browser’s local storage so the same language appears on later visits. You can remove this preference in your browser settings.' },
