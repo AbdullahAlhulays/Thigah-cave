@@ -38,7 +38,7 @@ export const hours = [
 export const copy = {
   ar: {
     brandHome: 'كهف ثقة — الرئيسية', mainNav: 'القائمة الرئيسية', languageLabel: 'اختر اللغة', openMenu: 'افتح القائمة', closeMenu: 'أغلق القائمة', skipLink: 'الانتقال إلى المحتوى',
-    nav: { home: 'الرئيسية', games: 'الألعاب', hours: 'أوقات العمل', events: 'الفعاليات', contact: 'تواصل معنا' },
+    nav: { home: 'الرئيسية', games: 'الألعاب', hours: 'أوقات العمل', events: 'الفعاليات', moments: 'ذكرياتنا', contact: 'تواصل معنا' },
     metaDescription: 'كهف ثقة: مش هتقدر تغمض عينيك. بلوت، ألعاب طاولة، بلياردو، بلايستيشن، وليالي الخميس.',
     heroAlt: 'جلسات ومقاعد داخل مقهى دافئ بجدران مقوسة', heroTitle: 'كهف ثقة', heroSubtitle: 'مش هتقدر تغمض عينيك', exploreGames: 'استكشف الألعاب',
     gamesKicker: 'على راحتك', gamesTitle: 'اللعبة اللي تجمعنا', gamesIntro: 'من البلوت إلى ألعاب الطاولة والبلايستيشن، اختر جوّك.', featured: 'اللعبة المفضلة',
@@ -65,7 +65,7 @@ export const copy = {
   },
   en: {
     brandHome: 'Thigah Cave — Home', mainNav: 'Main navigation', languageLabel: 'Choose language', openMenu: 'Open menu', closeMenu: 'Close menu', skipLink: 'Skip to content',
-    nav: { home: 'Home', games: 'Games', hours: 'Opening Hours', events: 'Events', contact: 'Contact' },
+    nav: { home: 'Home', games: 'Games', hours: 'Opening Hours', events: 'Events', moments: 'Moments', contact: 'Contact' },
     metaDescription: "Thigah Cave: You won't be able to close your eyes. Baloot, table games, billiards, PlayStation, and Thursday nights.",
     heroAlt: 'Warm café seating with arched interior walls', heroTitle: 'Thigah Cave', heroSubtitle: "You won't be able to close your eyes", exploreGames: 'Explore the games',
     gamesKicker: 'Make yourself at home', gamesTitle: 'Games worth gathering for', gamesIntro: 'From Baloot to table games and PlayStation, find your game.', featured: 'The main event',

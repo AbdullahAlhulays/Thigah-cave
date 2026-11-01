@@ -5,7 +5,7 @@ import thursdayPoster from './assets/photos/thursday-poster.jpg'
 import thursdayVideo from './assets/video/thursday-nights.mp4'
 import './App.css'
 
-const sections = ['home', 'games', 'hours', 'events', 'contact']
+const sections = ['home', 'games', 'hours', 'events', 'moments', 'contact']
 
 function currentHash() {
   const hash = window.location.hash.slice(1)
