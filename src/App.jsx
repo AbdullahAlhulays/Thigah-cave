@@ -38,12 +38,12 @@ function SectionHeading({ number, kicker, title, text, id }) {
   return <div className="section-heading"><span className="section-number" aria-hidden="true">{number}</span><div><p className="eyebrow">{kicker}</p><h2 id={id}>{title}</h2>{text && <p className="section-intro">{text}</p>}</div></div>
 }
 
-function GameCard({ game, language, t, index }) {
-  return <article className={`game-card ${game.featured ? 'game-card--featured' : ''} ${index > 4 ? 'game-card--last' : ''}`}>
-    <img src={game.image} alt={game.alt[language]} loading="lazy" decoding="async" />
+function GameCard({ game, language }) {
+  return <li className="game-card" dir={language === 'ar' ? 'rtl' : 'ltr'}>
+    <img src={game.image} alt={game.alt[language]} decoding="async" />
     <div className="game-card__shade" />
-    <div className="game-card__content">{game.featured && <span className="game-card__tag">{t.featured}</span>}<h3>{game.name[language]}</h3><span className="game-card__number" aria-hidden="true">0{index + 1}</span></div>
-  </article>
+    <h3>{game.name[language]}</h3>
+  </li>
 }
 
 function ContactActions({ kind, t }) {
@@ -110,10 +110,15 @@ function Home({ language, t }) {
       <div className="hero__bottom"><span>{t.heroBottom}</span><span>01 / 04</span></div>
     </section>
 
-    <section className="section games-section" id="games" aria-labelledby="games-title"><div className="shell">
-      <SectionHeading number="01" kicker={t.gamesKicker} title={t.gamesTitle} text={t.gamesIntro} id="games-title" />
-      <div className="games-grid">{games.map((game, index) => <GameCard key={game.key} game={game} language={language} t={t} index={index} />)}</div>
-    </div></section>
+    <section className="section games-section" id="games" aria-labelledby="games-title">
+      <div className="shell"><SectionHeading number="01" kicker={t.gamesKicker} title={t.gamesTitle} text={t.gamesIntro} id="games-title" /></div>
+      <div className="games-marquee">
+        <div className="games-track">
+          <ul className="games-list">{games.map((game) => <GameCard key={game.key} game={game} language={language} />)}</ul>
+          <ul className="games-list" aria-hidden="true">{games.map((game) => <GameCard key={game.key} game={game} language={language} />)}</ul>
+        </div>
+      </div>
+    </section>
 
     <section className="section hours-section" id="hours" aria-labelledby="hours-title"><div className="shell hours-layout"><div><SectionHeading number="02" kicker={t.hoursKicker} title={t.hoursTitle} text={t.hoursIntro} id="hours-title" /></div>
       <div className="hours-table" role="table" aria-label={t.hoursTitle}>{hours.map((item) => <div className={`hours-row ${item.allDay ? 'hours-row--highlight' : ''} ${item.closed ? 'hours-row--muted' : ''}`} role="row" key={item.day}><span role="cell">{t.days[item.day]}</span><strong role="cell">{item.allDay ? t.allDay : item.closed ? t.closed : t.standardHours}</strong></div>)}</div>
